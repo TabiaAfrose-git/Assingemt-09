@@ -12,6 +12,8 @@ const googleProvider = new GoogleAuthProvider();
 const gitHubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({children}) => {
+
+    //states...
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -47,7 +49,6 @@ const AuthProvider = ({children}) => {
     // SetUser
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-
             console.log('Current value of current User in useEffect:', currentUser);
             setUser(currentUser);
             setLoading(false)
@@ -55,7 +56,8 @@ const AuthProvider = ({children}) => {
         return ()=>{ unSubscribe();}
     },[])
 
-    const authInfo = { user,
+    const authInfo = {
+        user,
         createUser,
         singInUser,
         LogInWithGoogle,

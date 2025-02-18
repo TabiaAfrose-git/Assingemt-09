@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <h1>{user.displayName}</h1>
-          <img src={user.photoURL} alt="" />
+            <img src={user.photoURL} alt="" />
 
         </div>
     );

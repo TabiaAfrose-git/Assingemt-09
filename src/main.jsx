@@ -13,6 +13,7 @@ import AuthProvider from './provider/AuthProvider';
 import PrivetRouter from './routers/PrivetRouter';
 import DashBord from './components/DashBord';
 import Profile from './components/Profile';
+import About from './components/About';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <PrivetRouter><Profile></Profile></PrivetRouter>
+      },
+      {
+        path: '/about',
+        element:<PrivetRouter> <About></About></PrivetRouter>
       }
     ]
   },
