@@ -42,7 +42,7 @@ const NavBar = () => {
                 {NavLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">TripNest</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -59,6 +59,7 @@ const NavBar = () => {
                           user.photoURL ?
                           <div className="avatar">
                             <div className="ring-primary  w-[50px] h-[50px] rounded-full ring ring-offset-2">
+
                               <img src= {user.photoURL}/>
                             </div>
                           </div>

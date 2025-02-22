@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import Banner from "./Banner";
+import Footer from "./Footer";
 
 
 const Home = () => {
@@ -7,9 +9,10 @@ const Home = () => {
     //console.log(user.currentUser)
     return (
         <div>
-            <h1>{user.displayName}</h1>
-            <img src={user.photoURL} alt="" />
-
+            <div className="w-3/4 mx-auto">
+               <Banner className="w-3/4 mx-auto"></Banner>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
