@@ -14,6 +14,7 @@ import PrivetRouter from './routers/PrivetRouter';
 import DashBord from './components/DashBord';
 import Profile from './components/Profile';
 import About from './components/About';
+import PropertyDetails from './components/PropertyDetails';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
       {
         path: '/',
         element:<PrivetRouter><Home></Home></PrivetRouter>,
-        loader: ()=> fetch('data.json')
+        loader: ()=> fetch('/data.json')
+      },
+      {
+        path: '/residentia/:id',
+        element:<PropertyDetails></PropertyDetails>,
+        loader: ()=> fetch('/data.json')
       },
       {
         path: '/Login',
