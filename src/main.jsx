@@ -23,12 +23,12 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element:<PrivetRouter><Home></Home></PrivetRouter>,
+        element:<Home></Home>,
         loader: ()=> fetch('/data.json')
       },
       {
         path: '/residentia/:id',
-        element:<PropertyDetails></PropertyDetails>,
+        element:<PrivetRouter><PropertyDetails></PropertyDetails></PrivetRouter>,
         loader: ()=> fetch('/data.json')
       },
       {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/about',
-        element:<PrivetRouter> <About></About></PrivetRouter>
+        element: <About></About>
       }
     ]
   },

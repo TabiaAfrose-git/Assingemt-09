@@ -40,6 +40,7 @@ const Login = () => {
         LogInWithGoogle()
         .then(result => {
             console.log(result.user)
+            Navigate('/')
         })
         .catch(error => {console.log(error)})
 
@@ -49,6 +50,7 @@ const Login = () => {
         logInWithGithub()
         .then(result =>{
             console.log(result.user)
+            Navigate('/')
         } )
         .catch(error => {console.log(error.message)})
     }

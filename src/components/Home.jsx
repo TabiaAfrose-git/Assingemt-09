@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import EstateSection from "./EstateSection";
 import { useLoaderData } from "react-router-dom";
 import ResidentialCard from "./ResidentialCard";
+import BrakingNews from "./BrakingNews";
 
 
 const Home = () => {
@@ -13,7 +14,8 @@ const Home = () => {
     console.log(residentias);
     return (
         <div >
-            <div className="w-3/4  mx-auto m-5 p-5 ">
+            <div className="w-3/4  mx-auto ">
+                <BrakingNews ></BrakingNews>
                <Banner className="mx-auto"></Banner>
                <EstateSection
                     className ="m-5 p-5"

@@ -20,11 +20,17 @@ const NavBar = () => {
 
     const NavLinks = <>
         {
-            user && <>
-                <li><NavLink to = "/">Home</NavLink></li>
+            user ?
+            <>  <li><NavLink to = "/">Home</NavLink></li>
+                <li><NavLink to = '/about'>About</NavLink></li>
                 <li><NavLink to = '/profile'>Profile</NavLink></li>
                 <li><NavLink to = '/dashboard'>DashBoard</NavLink></li>
-                <li><NavLink to = '/about'>About</NavLink></li>
+
+            </> :
+            <>
+              <li><NavLink to = "/">Home</NavLink></li>
+              <li><NavLink to = '/about'>About</NavLink></li>
+              <li><NavLink to = '/Register'>Register</NavLink></li>
             </>
         }
 
@@ -42,7 +48,7 @@ const NavBar = () => {
                 {NavLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">TripNest</a>
+          <a className=" text-xl font-bold ml-2">TripNest</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

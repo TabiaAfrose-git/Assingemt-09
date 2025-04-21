@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const PropertyDetails = () => {
     const residentias = useLoaderData();
@@ -22,7 +22,7 @@ const PropertyDetails = () => {
             <p className="py-2">{description} </p>
             <p className="py-2">{segment_name} </p>
             <p className="py-2"><strong className="text-cyan-700">{price}</strong> </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary"><Link to = '/'>Go to Home</Link></button>
           </div>
         </div>
       </div>
