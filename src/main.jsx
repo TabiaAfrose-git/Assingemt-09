@@ -15,6 +15,7 @@ import DashBord from './components/DashBord';
 import Profile from './components/Profile';
 import About from './components/About';
 import PropertyDetails from './components/PropertyDetails';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       }
     ]
   },

@@ -1,16 +1,12 @@
-import { useContext } from "react";
-import { AuthContext } from "../provider/AuthProvider";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import EstateSection from "./EstateSection";
 import { useLoaderData } from "react-router-dom";
-import ResidentialCard from "./ResidentialCard";
 import BrakingNews from "./BrakingNews";
 
 
 const Home = () => {
     const residentias = useLoaderData();
-    const {user} = useContext(AuthContext);
     console.log(residentias);
     return (
         <div >
@@ -22,7 +18,7 @@ const Home = () => {
                     residentias = {residentias}
                ></EstateSection>
             </div>
-            <Footer className = ""></Footer>
+            <Footer></Footer>
         </div>
     );
 };

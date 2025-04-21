@@ -10,7 +10,6 @@ const BrakingNews = () => {
             <Link to = "/" className="mr-10"><strong>Hot Deal:</strong>  Pay 6 months’ rent upfront and get 1 month FREE. For select premium properties only!</Link>
             <Link to = "/" className="mr-10"><strong>News Flash:</strong> Book your rental early and get 10% off your first 3 months' rent!</Link>
         </Marquee>
-
         </div>
     );
 };
