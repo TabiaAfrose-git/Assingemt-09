@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: '/residentia/:id',
         element:<PrivetRouter><PropertyDetails></PropertyDetails></PrivetRouter>,
-        loader: ()=> fetch('/data.json')
+        loader: ()=> fetch('../data.json')
       },
       {
         path: '/Login',

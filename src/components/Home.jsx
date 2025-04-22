@@ -12,7 +12,10 @@ const Home = () => {
         <div >
             <div className="w-3/4  mx-auto ">
                 <BrakingNews ></BrakingNews>
-               <Banner className="mx-auto"></Banner>
+               <Banner
+               className="mx-auto"
+               residentias = {residentias}
+               ></Banner>
                <EstateSection
                     className ="m-5 p-5"
                     residentias = {residentias}

@@ -8,7 +8,7 @@ const ResidentialCard = ({residentia}) => {
         <figure>
           <img
             src={image}
-            alt="Shoes" />
+            alt="img" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{estate_title}</h2>
@@ -17,7 +17,7 @@ const ResidentialCard = ({residentia}) => {
             <button className="btn btn-primary">
                 <Link
                 to = {`/residentia/${id}`}
-                >View</Link>
+                >Details</Link>
             </button>
           </div>
         </div>
